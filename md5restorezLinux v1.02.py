@@ -1,4 +1,4 @@
-print("md5restorez v1.01 19.03.2017\nАвторы: omonim2007 и abicorios\nhttp://pscd.ru/forum/index.php?/topic/321-omonims-sety-dlia-retro-konsolei-8-64-bit")
+print("md5restorez v1.02 24.03.2017\nАвторы: omonim2007 и abicorios\nhttp://pscd.ru/forum/index.php?/topic/321-omonims-sety-dlia-retro-konsolei-8-64-bit")
 print("https://github.com/abicorios")
 print("Чтобы выйти нажмите Ctrl+C\nЧтобы скопировать выделенное нажмите правую кнопку мыши.")
 print("Чтобы вставить из буфера обмена, тоже нажмите правую кнопку мыши.\nПрограмма по ситуации понимает, копирование или вставку нужно делать.")
