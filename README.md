@@ -1,7 +1,7 @@
 # md5utilzLinux
 Утилиты для обмена информацией о дереве каталогов. Запись информации о дереве каталогов в csv-файл, и упорядочивание каталогов в соответствии с информацией из csv-файла. Порт утилит https://github.com/abicorios/md5utilz с Windows на Linux.
 # Зависимости
-Утилиты зависят от порта архиватора 7zip на Linux [p7zip](http://p7zip.sourceforge.net/) и библиотеки [pandas](https://pandas.pydata.org/). В системах произошедших от Linux Debian можно использовать команду
+Утилиты зависят от порта архиватора 7zip на Linux [p7zip](http://p7zip.sourceforge.net/) и библиотеки обработки данных [pandas](https://pandas.pydata.org/). В системах произошедших от Linux Debian можно использовать команду
 ```
 sudo apt install p7zip-full p7zip-rar python3-pandas
 ```
