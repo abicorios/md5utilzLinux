@@ -134,7 +134,7 @@ while len(os.listdir(myto))>0:
     if myto=='q':
         exit()
 #    myto=norm(myto)
-mybase=r'{}'.format(input('Введите путь к файлу csv-базы, например /home/result/roms by genre ({}).csv\n'.format(pd.Timestamp.now().strftime('%d.%m.%Y'))))
+mybase=r'{}'.format(input('Введите путь к файлу csv-базы, например /home/{}/result/roms by genre ({}).csv\n'.format(user,pd.Timestamp.now().strftime('%d.%m.%Y'))))
 # mybase=r'D:\test\0\long (04.03.2018).csv'
 #mybase=U(mybase)
 while not os.path.isfile(mybase):
@@ -144,7 +144,7 @@ while not os.path.isfile(mybase):
         exit()
 #    mybase=U(mybase)
 # mybase=r'D:\t\Programs (11.02.2018).csv'
-myfrom=r'{}'.format(input('Введите путь к источнику файлов, например D:/Good and NonGood roms\n'))
+myfrom=r'{}'.format(input('Введите путь к источнику файлов, например /home/{}/Good and NonGood roms\n'.format(user)))
 # myfrom='D:/test/long'
 #myfrom=norm(myfrom)
 while not os.path.isdir(myfrom):
