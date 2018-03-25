@@ -33,14 +33,9 @@ def myexit():
 #        return s
 #def norm(s):
 #    return fend(U(s))
-
-
-
 def p(a):
     print(a.replace(myfrom,'').replace(myto,'').replace(exe,'').replace(mybuffer,''))
     f.write(str(a)+'\n')
-
-
 def md5(myfile):
     hash_md5 = hashlib.md5()
     with open(myfile, "rb") as f:
@@ -98,7 +93,6 @@ def readz(ipath,ito,ibuffer,tinfo):
                 if isempty(thisthing):
                     if inbuffer(ipath,ibuffer):
                         os.rmdir(thisthing)
-
 info=[]
 exe='/usr/bin'
 #p7zx86=r'C:\Program Files (x86)\7-Zip'
@@ -134,19 +128,13 @@ while not os.path.isdir(myfrom):
         exit()
 #    myfrom=norm(myfrom)
 mybuffer=r'/tmp/md5utilz'
-
 if not os.path.isdir(myto): os.mkdir(myto)
 if os.path.isdir(mybuffer): myrmtree(mybuffer)
 os.mkdir(mybuffer)
-
 f = open(r'{}/mylog.txt'.format(myto), 'a')
-
 # In[4]:
-
-
 readz(myfrom,myto,mybuffer,info)
 myrmtree(mybuffer)
-
 t=pd.DataFrame(info,columns=['path','name','md5'])
 t
 t['path']=t['path'].map(lambda x: x.replace(mybuffer+'/',''))
@@ -154,10 +142,6 @@ t
 t['path']=t['path'].map(lambda x: x.replace(myfrom+'/',''))
 t
 t.to_csv(r'{}/{} ({}).csv'.format(myto,myfrom.split('/')[-1],pd.Timestamp.now().strftime('%d.%m.%Y')),index=False)
-
-
 # In[5]:
-
-
 f.close()
 input('\nВведите Enter чтобы выйти.\n')
